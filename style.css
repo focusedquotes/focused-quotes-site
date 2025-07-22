@@ -35,7 +35,7 @@ header {
 }
 
 .logo {
-  width: 130px;
+  width: 120px;
   height: auto;
 }
 
@@ -57,7 +57,7 @@ header {
 
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
