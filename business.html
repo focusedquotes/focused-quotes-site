@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Startup Guide</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+  <div class="logo">
+  <a href="index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+    <img src="assets/logo.png" alt="Focused Quotes Logo" style="height: 40px; width: auto;">
+    <span>Focused Quotes</span>
+  </a>
+</div>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="free.html" class="active">Free eBook</a></li>
+      <li><a href="business.html">Business Book</a></li>
+      <li><a href="passive.html">Passive Income</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+</header>
+
+
+  <!-- Amazon-style Product Layout -->
+  <main class="product-page">
+    <div class="product-container">
+
+      <!-- Left: Images -->
+      <div class="product-images">
+        <div class="main-image">
+          <img id="mainImage" src="assets/business2.png" alt="Business Book Cover">
+        </div>
+        <div class="thumbnails">
+          <img src="assets/business2.png" alt="Cover" onclick="changeImage(this)">
+          <img src="assets/business.png" alt="Preview 1" onclick="changeImage(this)">
+          <img src="assets/business1.png" alt="Preview 2" onclick="changeImage(this)">
+        </div>
+      </div>
+
+      <!-- Middle: Detailed Book Details -->
+      <div class="product-details">
+        <h1>📗 The Ultimate Startup Guide for Indian Entrepreneurs</h1>
+        <div class="rating">⭐⭐⭐⭐⭐ (4.8/5, 250+ reviews)</div>
+
+        <p class="description">
+          Starting a business in India can feel overwhelming — legal registrations, market research,
+          funding, branding, and scaling can confuse even the smartest minds. This guide is your 
+          **step-by-step playbook** to go from idea to execution without wasting time or money.
+        </p>
+
+        <h2>Why This eBook is a Must-Read</h2>
+        <ul>
+          <li>Learn **how to identify profitable business ideas** that actually work in India.</li>
+          <li>Understand **legal registrations (GST, MSME, FSSAI, etc.)** made simple.</li>
+          <li>Step-by-step **business plan templates** with examples.</li>
+          <li>Detailed guide on **funding options** — bootstrapping, loans, government schemes, VC.</li>
+          <li>**Marketing strategies** for digital & offline growth, tailored for Indian startups.</li>
+        </ul>
+
+        <h2>Inside the Book</h2>
+        <ul>
+          <li>✅ Idea validation & market research tools (Google Trends, Flipkart, Quora, etc.)</li>
+          <li>✅ Funding options: Mudra loans, Startup India Seed Fund, Angel investors</li>
+          <li>✅ Branding tips: Logo, social media, influencer marketing, storytelling</li>
+          <li>✅ Sales growth strategies: Scaling, partnerships, customer retention</li>
+          <li>✅ Real-life **Indian case studies** — learn from successful startups & failures</li>
+        </ul>
+
+        <h2>Who Should Read?</h2>
+        <ul>
+          <li>College students exploring entrepreneurship.</li>
+          <li>Working professionals planning to escape the 9–5.</li>
+          <li>Homemakers looking to start small businesses from home.</li>
+          <li>Anyone serious about building a profitable business in India.</li>
+        </ul>
+
+        <h2>Bonus: Tools & Templates</h2>
+        <p>
+          Get free access to business plan templates, financial calculators, and compliance checklists
+          that will save you months of confusion and trial-and-error.
+        </p>
+      </div>
+
+      <!-- Right: Buy Box -->
+      <div class="buy-box">
+        <h2>
+          <span class="old-price">₹399.00</span>
+          <span class="free-label">₹99.00</span>
+        </h2>
+        <p class="timer-text">⏳ Offer ends in <span id="countdown">15:00</span></p>
+        <a href="https://rzp.io/rzp/FwzOf7I" target="_blank" class="btn">Buy Now</a>
+        <p class="small-text">📧 Delivered to your mailbox within 10 minutes</p>
+        <p class="in-stock">✅ In Stock</p>
+        <p class="seller">Sold by <strong>Focused Quotes</strong></p>
+        <p class="payment">Payment securely via Razorpay</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Readers Are Saying</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <img src="assets/m3.jpeg" alt="Person 1">
+        <h3>Rohan Patil</h3>
+        <p>"This book explained GST and MSME registration in simple words — saved me thousands in CA fees."</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="assets/f3.png" alt="Person 2">
+        <h3>Sneha Kapoor</h3>
+        <p>"The funding section opened my eyes to Mudra loans and Startup India schemes. A real gem for beginners!"</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="assets/m4.png" alt="Person 3">
+        <h3>Arjun Mehta</h3>
+        <p>"Unlike random YouTube videos, this guide is structured and covers everything — idea to execution."</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="assets/f4.jpeg" alt="Person 4">
+        <h3>Meera Joshi</h3>
+        <p>"I launched my skincare brand after reading this. The branding and marketing tips were spot on."</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="assets/m5.jpeg" alt="Person 5">
+        <h3>Karan Shah</h3>
+        <p>"This is literally a startup bhagavad gita for Indians. Simple, practical, and full of actionable strategies."</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

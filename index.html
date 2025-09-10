@@ -1,41 +1,51 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Focused Quotes | Free & Premium Business Guides</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebook Store</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-  <div class="logo-text-container">
-    <img src="logo.png" alt="Focused Quotes Logo" class="logo">
-    <div class="header-text">
-      <h1>Focused Quotes</h1>
-      <p>Build your business from scratch</p>
-    </div>
-  </div>
+ <header>
+ <div class="logo">
+  <a href="index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+    <img src="assets/logo.png" alt="Focused Quotes Logo" style="height: 40px; width: auto;">
+    <span>Focused Quotes</span>
+  </a>
+</div>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="free.html" class="active">Free eBook</a></li>
+      <li><a href="business.html">Business Book</a></li>
+      <li><a href="passive.html">Passive Income</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" id="hamburger">&#9776;</div>
 </header>
 
-  <main class="container">
-    
-   <!-- Free eBook Card -->
+
+
+<!-- Free eBook Card -->
 <section class="card">
   <div class="card-content">
     <div class="card-image">
-      <img src="free book.png" alt="Free eBook Cover">
+      <img src="assets/free book.png" alt="Free eBook Cover">
     </div>
     <div class="card-text">
       <h2>📘 Free eBook</h2>
       <h3>10 Powerful Product-Based Business Ideas</h3>
       <p>This free guide is perfect if you want to start a business but don’t know where to begin. Here's what you'll get:</p>
       <ul>
-        <li> 10 low-investment product business ideas tailored for India</li>
-        <li> Beginner-friendly – no prior experience required</li>
-        <li> Business ideas based on real customer demand</li>
-        <li> Focus on food, skincare, grooming, and eco-products</li>
-        <li> Designed for online-first selling (Instagram, Meesho, Amazon, etc.)</li>
-        <li> Perfect for students, job seekers, and side hustlers</li>
+        <li>10 low-investment product business ideas tailored for India</li>
+        <li>Beginner-friendly – no prior experience required</li>
+        <li>Business ideas based on real customer demand</li>
+        <li>Focus on food, skincare, grooming, and eco-products</li>
+        <li>Designed for online-first selling (Instagram, Meesho, Amazon, etc.)</li>
+        <li>Perfect for students, job seekers, and side hustlers</li>
       </ul>
       <p>Start small, think big. Take your first step into business today.</p>
       <a href="https://forms.gle/JGyARtR8ELQA4W7s6" target="_blank" class="btn">Download Free</a>
@@ -43,37 +53,53 @@
   </div>
 </section>
 
-
-
-    <!-- ₹99 eBook Card -->
-<section class="card">
+<!-- Business eBook Card (reversed) -->
+<section class="card reverse">
   <div class="card-content">
     <div class="card-image">
-      <img src="Business From Scratch img.png" alt="Business from Scratch eBook">
+      <img src="assets/business.png" alt="Business Book Cover">
     </div>
     <div class="card-text">
-      <h2>💼 ₹99 eBook</h2>
-      <h3>Business from Scratch</h3>
-      <p>This step-by-step premium guide shows you how to start your own business in India — even with ₹0 in your pocket. Here’s what’s inside:</p>
+      <h2>💼 Business eBook</h2>
+      <h3>How to Start a Business from Scratch in India</h3>
+      <p>This ₹99 eBook is your roadmap to starting a successful business in India with minimal confusion:</p>
       <ul>
-        <li> How to choose the right business idea based on your goals</li>
-        <li> Step-by-step registration process: GST, MSME, FSSAI, etc.</li>
-        <li> How to design packaging and branding on a small budget</li>
-        <li> Strategies to start selling online (Instagram, Amazon, Meesho)</li>
-        <li> Tools, websites, and templates to save you time</li>
-        <li> Budget plans and business checklist to keep you on track</li>
+        <li>Step-by-step guide tailored for Indian entrepreneurs</li>
+        <li>Covers registration, licenses, and compliance</li>
+        <li>Affordable strategies for branding and marketing</li>
+        <li>Real-world examples from Indian businesses</li>
+        <li>Perfect for first-time founders</li>
       </ul>
-      <p>If you're serious about starting your own business — this ₹99 guide will save you months of trial and error.</p>
-      <a href="https://rzp.io/rzp/FwzOf7I" target="_blank" class="btn">Buy Now for ₹99</a>
+      <p>No MBA required — just the right playbook to get started.</p>
+      <a href="https://rzp.io/rzp/FwzOf7I" target="_blank" class="btn">Buy for ₹99</a>
     </div>
   </div>
 </section>
 
+<!-- Passive Income eBook Card -->
+<section class="card">
+  <div class="card-content">
+    <div class="card-image">
+      <img src="assets/free book.png" alt="Passive Income Book Cover">
+    </div>
+    <div class="card-text">
+      <h2>💰 Passive Income eBook</h2>
+      <h3>Passive Income Secret: Plan, Automate & Scale</h3>
+      <p>This guide helps you build long-term income streams that work while you sleep:</p>
+      <ul>
+        <li>Proven passive income models that work in India</li>
+        <li>Step-by-step plan to start small and scale</li>
+        <li>How to automate systems and save time</li>
+        <li>Diversification strategies to protect your income</li>
+        <li>Practical tools, apps, and resources included</li>
+      </ul>
+      <p>Start building wealth today instead of waiting for tomorrow.</p>
+      <a href="https://rzp.io/rzp/WjrSbBz" target="_blank" class="btn">Buy for ₹149</a>
+    </div>
+  </div>
+</section>
 
-  </main>
+<script src="script.js"></script>
 
-  <footer>
-    <p>Made with ❤️ by @_focused_quotes</p>
-  </footer>
 </body>
 </html>
