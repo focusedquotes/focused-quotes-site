@@ -1,105 +1,383 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ebook Store</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
- <header>
- <div class="logo">
-  <a href="index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-    <img src="assets/logo.png" alt="Focused Quotes Logo" style="height: 40px; width: auto;">
-    <span>Focused Quotes</span>
-  </a>
-</div>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Focused Quotes Ebook Store</title>
+    <meta
+      name="description"
+      content="Explore and download ebooks on business, passive income, and self-growth."
+    />
 
-  <nav id="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="free.html" class="active">Free eBook</a></li>
-      <li><a href="business.html">Business Book</a></li>
-      <li><a href="passive.html">Passive Income</a></li>
-    </ul>
-  </nav>
-  <div class="hamburger" id="hamburger">&#9776;</div>
-</header>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome Free CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Focused Quotes Ebook Store" />
+    <meta
+      property="og:description"
+      content="Explore and download ebooks on business, passive income, and self-growth."
+    />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:image" content="assets/passive.png" />
+    <meta property="og:type" content="website" />
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Focused Quotes Ebook Store" />
+    <meta
+      name="twitter:description"
+      content="Explore and download ebooks on business, passive income, and self-growth."
+    />
+    <meta name="twitter:image" content="assets/ebook-cover.jpg" />
+    <script src="https://plugin.flexifunnels.com/js/jquerylatest.min.js"></script>
 
-<!-- Free eBook Card -->
-<section class="card">
-  <div class="card-content">
-    <div class="card-image">
-      <img src="assets/free book.png" alt="Free eBook Cover">
-    </div>
-    <div class="card-text">
-      <h2>📘 Free eBook</h2>
-      <h3>10 Powerful Product-Based Business Ideas</h3>
-      <p>This free guide is perfect if you want to start a business but don’t know where to begin. Here's what you'll get:</p>
-      <ul>
-        <li>10 low-investment product business ideas tailored for India</li>
-        <li>Beginner-friendly – no prior experience required</li>
-        <li>Business ideas based on real customer demand</li>
-        <li>Focus on food, skincare, grooming, and eco-products</li>
-        <li>Designed for online-first selling (Instagram, Meesho, Amazon, etc.)</li>
-        <li>Perfect for students, job seekers, and side hustlers</li>
-      </ul>
-      <p>Start small, think big. Take your first step into business today.</p>
-      <a href="https://forms.gle/JGyARtR8ELQA4W7s6" target="_blank" class="btn">Download Free</a>
-    </div>
-  </div>
-</section>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5BXKR52S");
+    </script>
+    <!-- End Google Tag Manager -->
 
-<!-- Business eBook Card (reversed) -->
-<section class="card reverse">
-  <div class="card-content">
-    <div class="card-image">
-      <img src="assets/business.png" alt="Business Book Cover">
-    </div>
-    <div class="card-text">
-      <h2>💼 Business eBook</h2>
-      <h3>How to Start a Business from Scratch in India</h3>
-      <p>This ₹99 eBook is your roadmap to starting a successful business in India with minimal confusion:</p>
-      <ul>
-        <li>Step-by-step guide tailored for Indian entrepreneurs</li>
-        <li>Covers registration, licenses, and compliance</li>
-        <li>Affordable strategies for branding and marketing</li>
-        <li>Real-world examples from Indian businesses</li>
-        <li>Perfect for first-time founders</li>
-      </ul>
-      <p>No MBA required — just the right playbook to get started.</p>
-      <a href="https://rzp.io/rzp/FwzOf7I" target="_blank" class="btn">Buy for ₹99</a>
-    </div>
-  </div>
-</section>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1871841206923224"); // Your Pixel ID
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1871841206923224&ev=PageView&noscript=1"
+      />
+    </noscript>
 
-<!-- Passive Income eBook Card -->
-<section class="card">
-  <div class="card-content">
-    <div class="card-image">
-      <img src="assets/passive.png" alt="Passive Income Book Cover">
-    </div>
-    <div class="card-text">
-      <h2>💰 Passive Income eBook</h2>
-      <h3>Passive Income Secret: Plan, Automate & Scale</h3>
-      <p>This guide helps you build long-term income streams that work while you sleep:</p>
-      <ul>
-        <li>Proven passive income models that work in India</li>
-        <li>Step-by-step plan to start small and scale</li>
-        <li>How to automate systems and save time</li>
-        <li>Diversification strategies to protect your income</li>
-        <li>Practical tools, apps, and resources included</li>
-      </ul>
-      <p>Start building wealth today instead of waiting for tomorrow.</p>
-      <a href="https://rzp.io/rzp/WjrSbBz" target="_blank" class="btn">Buy for ₹149</a>
-    </div>
-  </div>
-</section>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+  </head>
 
-<script src="script.js"></script>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5BXKR52S"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-</body>
+    <section id="iq89">
+      <div id="i4xa" class="gjs-ft-wrapper gjs-ft-wrap-normal wrapper-box">
+        <div id="iofo4" class="gjs-ft-row">
+          <div id="i2mls" class="gjs-ft-column gjs-ft-col-md">
+            <h2 id="i99ub" class="ftsub_heading">
+              Get Your Copy of “Passive Income Secret” Today
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="in4wi" class="gjs-ft-section ft-section-box">
+      <div id="i3iys" class="gjs-ft-wrapper gjs-ft-wrap-normal wrapper-box">
+        <div id="iajnz" class="gjs-ft-row">
+          <div id="iv3e3" class="gjs-ft-column gjs-ft-col-md">
+            <div
+              data-droptype="resColumn"
+              id="ipjyzt"
+              class="ft-resize resize-row-style"
+            >
+              <h2 id="idyavcf" class="ftsub_heading">
+                Master The Secrets of Passive Income in 2025
+              </h2>
+            </div>
+            <h2 id="isw5fy" class="ftsub_heading">
+              Make
+              <font color="#846300"
+                ><font color="#dba466">₹1 Lakh+ Per Month</font></font
+              >
+              with<font color="#dea15b"
+                >&nbsp;Passive Income Streams Plan, Automate & Scale</font
+              >&nbsp;Your Income&nbsp;<u>in 2025!!</u>
+            </h2>
+            <h2 id="ilhu3k" class="ftsub_heading">
+              (Learn how to create multiple income streams with zero confusion,
+              step-by-step guides, and proven strategies from experts)
+            </h2>
+            <div
+              data-droptype="resColumn"
+              id="i7ukyii"
+              class="ft-resize resize-row-style"
+            >
+              <div class="ft_com_div ft_com_box">
+                <img
+                  id="ia5nk"
+                  srcset="assets/trustimg.png"
+                  sizes="100vw"
+                  src="assets/trustimg.png"
+                  alt="toprating4_qwnju_1150"
+                  class="ft_image img-fluid ft_image-style"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ile0g" class="gjs-ft-row">
+          <div id="i9o0e" class="gjs-ft-column gjs-ft-col-md">
+            <h2 id="ix8pd6s" class="ftsub_heading">
+              <b>Take a look inside the Passive Income Secret ebook</b>
+            </h2>
+            <div class="ft_com_div ft_com_box">
+              <div id="ii9ipvc" data-provider="vi">
+                <img
+                  id="ia5nk"
+                  srcset="assets/mockimg.png"
+                  sizes="100vw"
+                  src="assets/mockimg.png"
+                  alt="toprating4_qwnju_1150"
+                  class="ft_image img-fluid ft_image-style"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="iesqn" class="gjs-ft-column gjs-ft-col-md">
+            <div id="ii1fgu4" class="gjs-ft-row">
+              <div id="ikw6pwl" class="gjs-ft-column gjs-ft-col-md">
+                <div id="iopp4ee" class="gjs-ft-row">
+                  <div id="io2zfef" class="hgt gjs-ft-column gjs-ft-col-md">
+                    <div class="ft_com_div ft_com_box">
+                      <i
+                        id="ivipkyg"
+                        class="fat fa fa-solid fa-file-pdf ft-icon"
+                      ></i>
+                    </div>
+                  </div>
+                  <div id="iouuykz" class="gjs-ft-column gjs-ft-col-md">
+                    <h2 id="ihm50t" class="ftsub_heading">
+                      <font color="#b1b1b1"><u>Format:</u>:</font>&nbsp;PDF
+                      Instant Download
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div id="ibjsflh" class="gjs-ft-column gjs-ft-col-md">
+                <div id="i8t93d3" class="gjs-ft-row">
+                  <div id="i0430rj" class="hgt gjs-ft-column gjs-ft-col-md">
+                    <div id="iv0rgxg" class="ft_com_div ft_com_box">
+                      <i id="i4ah49n" class="fat fa fa-clock ft-icon"></i>
+                    </div>
+                  </div>
+                  <div id="i178nph" class="gjs-ft-column gjs-ft-col-md">
+                    <h2 id="i1lcvij" class="ftsub_heading">
+                      <font color="#b1b1b1"><u>Quick Read:</u>:</font> 50+
+                      practical strategies inside<br draggable="true" />
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="iddwyci" class="gjs-ft-row">
+              <div id="ixt6yql" class="gjs-ft-column gjs-ft-col-md">
+                <div id="iv3sgrk" class="gjs-ft-row">
+                  <div id="islq2n2" class="hgt gjs-ft-column gjs-ft-col-md">
+                    <div id="ihagqw3" class="ft_com_div ft_com_box">
+                      <i id="ir0w6ze" class="fat fa fa-lightbulb ft-icon"></i>
+                    </div>
+                  </div>
+                  <div id="ic7vdw2" class="gjs-ft-column gjs-ft-col-md">
+                    <h2 id="imyc0rg" class="ftsub_heading">
+                      <font color="#b1b1b1">Content:</font> <br />Step-by-Step
+                      Passive Income Guide<br />
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div id="ijn494n" class="gjs-ft-column gjs-ft-col-md">
+                <div id="iv3sgrk" class="gjs-ft-row">
+                  <div id="islq2n2" class="hgt gjs-ft-column gjs-ft-col-md">
+                    <div id="ihagqw3" class="ft_com_div ft_com_box">
+                      <i id="ir0w6ze" class="fat fa fa-earth ft-icon"></i>
+                    </div>
+                  </div>
+                  <div id="ic7vdw2" class="gjs-ft-column gjs-ft-col-md">
+                    <h2 id="imyc0rg" class="ftsub_heading">
+                      <font color="#b1b1b1">Access:</font><br />Lifetime
+                      availability worldwide, mobile-friendly
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 id="i3n9te" class="ftsub_heading">
+              Special Price ₹149 (Before it goes up to ₹499!)
+            </h2>
+            <div id="isannk" class="ft-countdown-prnt ft_com_div">
+              <div
+                id="izfxms"
+                countdown-type="evergreen"
+                countdown-starttime=""
+                countdown-endtime=""
+                countdown-end_hh="23"
+                countdown-end_mm="57"
+                countdown-timezone="India Standard Time::+5:5"
+                countdown-offset="+5.5"
+                expire-type="reset"
+                expire-days=""
+                countdown-eaction="1"
+                countdown-days="0"
+                countdown-hours="0"
+                countdown-minutes="28"
+                countdown-seconds="0"
+                tdays=""
+                class="countdown ft-countdown"
+              >
+                <div id="i0wctl" class="countdown-inner">
+                  <div id="iidjk3" class="tdays-prnt ft-timerprnt">
+                    <div id="im5tyw" class="tdays ft-timeCtrl">00</div>
+                    <div id="iupl8c" class="tdays-txt ft-timelabel">Days</div>
+                  </div>
+                  <div id="i0v3vk" class="thours-space ft-space-box">
+                    <div id="i6ru6a" class="ft-separator">:</div>
+                  </div>
+                  <div id="iksnn7" class="thours-prnt ft-timerprnt">
+                    <div id="i0sspq" class="thours ft-timeCtrl">00</div>
+                    <div id="iijvd3" class="thours-txt ft-timelabel">Hours</div>
+                  </div>
+                  <div id="iznmlq" class="tminutes-space ft-space-box">
+                    <div id="iumsq9" class="ft-separator">:</div>
+                  </div>
+                  <div id="ifmlrw" class="tminutes-prnt ft-timerprnt">
+                    <div id="iu8iu8" class="tminutes ft-timeCtrl">00</div>
+                    <div id="il1f05" class="tminutes-txt ft-timelabel">
+                      Minutes
+                    </div>
+                  </div>
+                  <div id="iljo31" class="tseconds-space ft-space-box">
+                    <div id="iw1kvk" class="ft-separator">:</div>
+                  </div>
+                  <div id="i9pcfq" class="tseconds-prnt ft-timerprnt">
+                    <div id="iu8iu8" class="tseconds ft-timeCtrl">00</div>
+                    <div id="ifnv01" class="tseconds-txt ft-timelabel">
+                      Seconds
+                    </div>
+                  </div>
+                </div>
+                <p id="ibr4ts" class="timer-before-txt fttimer-msg"></p>
+                <p id="ihrkqw" class="timer-after-txt fttimer-msg"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="i6uwxg" class="gjs-ft-row">
+          <div id="iorvar" class="gjs-ft-column gjs-ft-col-md">
+            <div id="ir8px3k" class="ft_com_div ft_com_box">
+              <a
+                data-animate="animate__animated animate__shakeX"
+                data-animate-repeat="animate__infinite"
+                data-animate-delay="2"
+                data-animate-duration="animate__slower"
+                id="iyo7j3f"
+                target="_blank"
+                href="https://rzp.io/rzp/WjrSbBz"
+                data-ftbuttontype="product"
+                data-ft-productdata="93754"
+                data-checkout-url="https://rzp.io/rzp/WjrSbBz"
+                class="gjs-btn animate__infinite izli4x-animate__delays animate__animated animate__shakeX animate__slower ivo2no-animate__delays"
+                ><span draggable="true" id="itoebo2" class="ffbtnmaintxt"
+                  ><span draggable="true" id="iyr423s" class="ffbtntxt"
+                    >Yes! I’m Ready to Build My Passive Income in 2025!</span
+                  ></span
+                ><span draggable="true" id="id998bz" class="ffbtnsubtxt"
+                  ><font
+                    data-gjs-type="text"
+                    draggable="true"
+                    color="#000000"
+                    id="ir3n8o"
+                    >Get Instant Access to
+                    <b data-gjs-type="default" draggable="true" id="iiyjmj"
+                      ><strike data-gjs-type="text" draggable="true" id="igjotn"
+                        >₹499/-</strike
+                      ><span
+                        data-gjs-type="text"
+                        draggable="true"
+                        id="i8b8zl"
+                        contenteditable="false"
+                      ></span></b
+                    ><b data-gjs-type="text" draggable="true" id="iylav8"
+                      >₹149/-</b
+                    ></font
+                  ></span
+                ></a
+              >
+            </div>
+            <h2 id="izi3p1a" class="ftsub_heading">
+              Trusted by 1000+ Entrepreneurs & Readers
+            </h2>
+            <div id="ipew4" class="ft-cus-session"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <noscript
+      ><input type="checkbox" id="noscript-close" style="display: none" />
+      <div id="noscript-overlay"></div>
+      <div id="noscript-popup">
+        <label for="noscript-close" id="close-noscript-popup">X</label>⚠️
+        JavaScript is disabled in the browser!<br />
+        Please enable it for a better experience.
+      </div></noscript
+    >
+    <script src="script.js"></script>
+  </body>
+
+  <script>
+    fbq("track", "Purchase", {
+      value: 149.0, // Replace with your ebook price
+      currency: "INR", // Currency code
+    });
+  </script>
 </html>

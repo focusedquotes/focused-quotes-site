@@ -1,38 +1,35 @@
-// Mobile nav toggle
-const hamburger = document.getElementById('hamburger');
-const navbar = document.getElementById('navbar');
+document.addEventListener("DOMContentLoaded", function () {
+  // Target your countdown container
+  const timerObj = document.getElementById("izfxms");
 
-hamburger.addEventListener('click', () => {
-  navbar.classList.toggle('active');
-});
+  // Starting time (28 minutes in seconds)
+  let totalSeconds = 28 * 60;
 
-// Image gallery switcher
-function changeImage(element) {
-  const mainImage = document.getElementById('mainImage');
-  mainImage.src = element.src;
-}
+  function updateTimer() {
+    let minutes = Math.floor(totalSeconds / 60);
+    let seconds = totalSeconds % 60;
 
-// Countdown Timer (15 minutes)
-function startCountdown(duration, display) {
-  let timer = duration, minutes, seconds;
-  setInterval(() => {
-    minutes = parseInt(timer / 60, 10);
-    seconds = parseInt(timer % 60, 10);
-
+    // Pad with 0 if less than 10
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    display.textContent = minutes + ":" + seconds;
+    // Update DOM
+    timerObj.querySelector(".tminutes").innerHTML = minutes;
+    timerObj.querySelector(".tseconds").innerHTML = seconds;
 
-    if (--timer < 0) {
-      timer = 0;
-      display.textContent = "Expired";
+    // When timer ends
+    if (totalSeconds <= 0) {
+      clearInterval(timerInterval);
+      // Optional: show a message or hide timer
+      timerObj.querySelector(".countdown-inner").style.display = "none";
+      timerObj.querySelector(".timer-after-txt").innerHTML = "⏳ Time’s up!";
+      timerObj.querySelector(".timer-after-txt").style.display = "block";
     }
-  }, 1000);
-}
 
-window.onload = function () {
-  const fifteenMinutes = 60 * 15, // 15 minutes
-        display = document.querySelector('#countdown');
-  startCountdown(fifteenMinutes, display);
-};
+    totalSeconds--;
+  }
+
+  // Run every second
+  updateTimer(); // run once immediately
+  const timerInterval = setInterval(updateTimer, 1000);
+});
