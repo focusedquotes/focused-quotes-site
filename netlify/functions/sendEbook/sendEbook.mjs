@@ -23,7 +23,7 @@ export async function handler(event, context) {
     from: "colorfulworld2001@gmail.com",
     to: customerEmail,
     subject: "Your Ebook Download Link",
-    text: "Thank you for your purchase! Download your ebook here: https://your-link.com/ebook.pdf"
+    text: "Thank you for your purchase! Download your ebook here: https://drive.google.com/drive/folders/1MTgix5LxF1UxPaD8-_qXs2f0mNu-H5cw?usp=drive_link"
   };
 
   try {
