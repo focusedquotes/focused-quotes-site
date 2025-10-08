@@ -13,14 +13,14 @@ export async function handler(event, context) {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "your.email@gmail.com",
-      pass: "your_app_password" // generate from Gmail App Passwords
+      user: "colorfulworld2001@gmail.com",
+      pass: "vvgb jikw grid qgqz" // generate from Gmail App Passwords
     }
   });
 
   // Email content
   let mailOptions = {
-    from: "your.email@gmail.com",
+    from: "colorfulworld2001@gmail.com",
     to: customerEmail,
     subject: "Your Ebook Download Link",
     text: "Thank you for your purchase! Download your ebook here: https://your-link.com/ebook.pdf"
