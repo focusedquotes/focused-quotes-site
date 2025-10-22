@@ -273,6 +273,34 @@ textarea {
   margin-top: 0px;
 }
 
+#ipc1kc {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+#ijdn2 {
+  background-color: #1b1915;
+}
+
+#iwzspy {
+  margin-top: 30px;
+}
+
+#igjz5as {
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  font-size: 39px;
+  margin-bottom: 0px;
+  color: #ffffff;
+  line-height: 1.3;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 #iouuykz {
   padding: 0;
   margin-top: 0px;
@@ -376,6 +404,7 @@ textarea {
 
 #iyo7j3f {
   display: block;
+  margin: 0 auto;
   width: 65%;
   font-size: 20px;
   padding-bottom: 10px;
@@ -536,6 +565,11 @@ textarea {
   padding-top: 0px;
 }
 
+#ivkmtk {
+  margin-right: 12px;
+  color: #dea15b;
+}
+
 #iajnz {
   padding-bottom: 0px;
 }
@@ -555,6 +589,14 @@ textarea {
 
 #iv3e3 {
   padding-top: 0px;
+}
+
+#i45728 {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
 }
 
 #ibjsflh {
@@ -691,6 +733,17 @@ textarea {
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
+#i8lvf {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  margin-top: 0px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
 #i7ukyii {
   width: 46.2%;
   padding: 0;
@@ -703,6 +756,151 @@ textarea {
 #ia5nk {
   width: 100%;
   margin-bottom: 0px;
+}
+
+#i8v7xg {
+  flex-basis: 70%;
+}
+
+#ireiiw {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#io73ok {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+#iu7vu8 {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+#i2e7xg {
+  margin-right: 12px;
+  color: #dea15b;
+}
+
+#ioh5qw {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+#i5o8xm {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+#ibk4um {
+  margin-right: 12px;
+  color: #dea15b;
+}
+
+#iovufy {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+#isyfrz {
+  margin-right: 12px;
+  color: #dea15b;
+}
+
+#ixpp4v {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+#igncnj {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+#i7t4tf {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+#iflbb9 {
+  margin-right: 12px;
+  color: #dea15b;
+}
+
+#i4l3fi {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+#i5af27 {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+#iab5bh {
+  margin-right: 12px;
+  color: #dea15b;
+}
+
+#ib0viy {
+  margin-right: 12px;
+  color: #dea15b;
+}
+
+#it99dj {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+#i3b4la {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  margin-top: 5px;
+  text-align: left;
+}
+
+#ibiip7 {
+  margin-right: 12px;
+  color: #dea15b;
+}
+
+#io20s4 {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+#i5y7ok {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+#itrh34 {
+  padding-top: 0px;
 }
 
 #iyo7j3f {
@@ -825,6 +1023,48 @@ textarea {
   text-align: center;
 }
 
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+.liIcons {
+  margin-right: 5px;
+}
+
+.ft_lg_li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #fff; /* Adjust to your background */
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+  font-size: 18px;
+  min-height: 25px;
+  line-height: 1.5;
+  color: #000000;
+}
+.ft_lg_listyle {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.ff_lg_ul {
+  display: inline-block;
+  text-align: center;
+  list-style-position: outside;
+  word-break: break-word;
+  margin-bottom: 10px;
+  list-style-type: disc;
+  list-style: none; /* Removes normal bullets */
+  padding-left: 0; /* Removes extra spacing */
+  margin: 0;
+  width: 80%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 @media (max-width: 768px) {
   .gjs-ft-row {
     flex-wrap: wrap;
@@ -867,6 +1107,25 @@ textarea {
     border-radius: 5px 5px 5px 5px;
   }
 
+  #i5o8xm {
+    font-size: 16px;
+  }
+  #ixpp4v {
+    font-size: 16px;
+  }
+
+  #i5af27 {
+    font-size: 16px;
+  }
+
+  #i7t4tf {
+    font-size: 16px;
+  }
+
+  #i3b4la {
+    font-size: 16px;
+  }
+
   #ifhm3g2 {
     font-family: Montserrat, sans-serif;
     font-weight: 700;
@@ -884,6 +1143,15 @@ textarea {
     width: 44px;
     height: 44px;
     font-size: 24px;
+  }
+
+  #iu7vu8 {
+    font-size: 16px;
+  }
+
+  #iksn7n {
+    width: 100%;
+    margin-bottom: 3px;
   }
 
   #ipjyzt {
@@ -909,6 +1177,10 @@ textarea {
     font-weight: 700;
   }
 
+  #io20s4 {
+    font-size: 16px;
+  }
+
   #ihm50t {
     margin-left: 0px;
     font-size: 12px;
@@ -924,6 +1196,14 @@ textarea {
     flex-wrap: nowrap;
   }
 
+  #ireiiw {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  #i8lvf {
+    font-size: 16px;
+  }
   #iddwyci {
     flex-wrap: nowrap;
   }
@@ -958,6 +1238,9 @@ textarea {
     font-size: 24px;
   }
 
+  #i5y7ok {
+    font-size: 16px;
+  }
   #ir0w6ze {
     background-color: #1c1c1c;
     padding: 8px;
@@ -991,6 +1274,10 @@ textarea {
     margin-left: 0px;
     font-size: 12px;
     text-align: center;
+  }
+
+  #i45728 {
+    font-size: 16px;
   }
 
   #io2zfef {
@@ -1027,6 +1314,10 @@ textarea {
     width: 44px;
     height: 44px;
     font-size: 24px;
+  }
+
+  #i8v7xg {
+    padding: 0;
   }
 
   #ivipkyg {
@@ -1066,6 +1357,12 @@ textarea {
 
   #idyavcf {
     font-size: 13px;
+  }
+
+  #i3b4la {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
   }
 
   #isw5fy {
@@ -1164,6 +1461,13 @@ textarea {
   #iyo7j3f {
     width: 100%;
     font-size: 16px;
+  }
+
+  #igjz5as {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 
   #iijvd3 {
