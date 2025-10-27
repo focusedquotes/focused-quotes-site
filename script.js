@@ -33,3 +33,28 @@ document.addEventListener("DOMContentLoaded", function () {
   updateTimer(); // run once immediately
   const timerInterval = setInterval(updateTimer, 1000);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggles = document.querySelectorAll(".togglefaq");
+
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", function () {
+      const answer = this.nextElementSibling;
+
+      // Close all other open answers
+      document
+        .querySelectorAll(".ff-faqans-session.active")
+        .forEach((openAns) => {
+          if (openAns !== answer) openAns.classList.remove("active");
+        });
+
+      // Toggle current answer
+      answer.classList.toggle("active");
+
+      // Update icons
+      const icon = this.querySelector(".faq-icon");
+      icon.classList.toggle("fa-chevron-circle-down");
+      icon.classList.toggle("fa-chevron-circle-up");
+    });
+  });
+});
