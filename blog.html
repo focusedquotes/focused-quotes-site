@@ -13,8 +13,13 @@
       body {
         margin: 0;
         font-family: Montserrat;
-        background: #f9f9f9;
-        color: #1c1c1c;
+        color: #f9f9f9;
+        background-color: #1b1915;
+
+        background-image: url(../assets/bgimg.webp);
+        background-repeat: repeat; /* ✅ repeat image */
+        background-position: top left; /* start from top */
+        background-size: auto; /* ❌ remove stretch */
       }
 
       /* HEADER */
@@ -48,7 +53,8 @@
 
       /* CARD */
       .blog-card {
-        background: white;
+        background: rgba(53, 52, 48, 0.5);
+        border: 1px solid rgba(222, 161, 91, 0.5);
         border-radius: 10px;
         padding: 20px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -67,12 +73,13 @@
       }
 
       .blog-card h2 {
+        color: white;
         font-size: 20px;
         margin-bottom: 10px;
       }
 
       .blog-card p {
-        color: #555;
+        color: #ffffff;
         font-size: 14px;
       }
     </style>
@@ -87,15 +94,15 @@
       <div class="blog-grid">
         <div class="blog-card">
           <a href="blog1.html">
-            <img src="https://via.placeholder.com/400x200" />
-            <h2>How to Start Passive Income in India</h2>
-            <p>Step-by-step beginner roadmap...</p>
+            <img src="assets/after.png" />
+            <h2>Top 5 Passive Income Ideas That Can Double Your Income</h2>
+            <p>most practical and proven passive income ideas...</p>
           </a>
         </div>
 
         <div class="blog-card">
           <a href="blog2.html">
-            <img src="https://via.placeholder.com/400x200" />
+            <img src="assets/blog2_1.png" />
             <h2>5 Passive Income Ideas That Work</h2>
             <p>Real methods you can start today...</p>
           </a>
